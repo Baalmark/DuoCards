@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AB60A2D2AFA4F34008A2DDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A2C2AFA4F34008A2DDB /* AppDelegate.swift */; };
+		3AB60A2F2AFA4F34008A2DDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A2E2AFA4F34008A2DDB /* SceneDelegate.swift */; };
+		3AB60A312AFA4F34008A2DDB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A302AFA4F34008A2DDB /* MainView.swift */; };
+		3AB60A372AFA4F34008A2DDB /* DuoCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A352AFA4F34008A2DDB /* DuoCards.xcdatamodeld */; };
+		3AB60A392AFA4F35008A2DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AB60A382AFA4F35008A2DDB /* Assets.xcassets */; };
+		3AB60A3C2AFA4F35008A2DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB60A3A2AFA4F35008A2DDB /* LaunchScreen.storyboard */; };
+		3AB60A472AFA4F35008A2DDB /* DuoCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A462AFA4F35008A2DDB /* DuoCardsTests.swift */; };
+		3AB60A512AFA4F35008A2DDB /* DuoCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A502AFA4F35008A2DDB /* DuoCardsUITests.swift */; };
+		3AB60A532AFA4F35008A2DDB /* DuoCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A522AFA4F35008A2DDB /* DuoCardsUITestsLaunchTests.swift */; };
+		3AB60A602AFA621E008A2DDB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A5F2AFA621E008A2DDB /* Model.swift */; };
+		3AB60A622AFA6DB1008A2DDB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A612AFA6DB1008A2DDB /* MainController.swift */; };
+		3AB60A692AFBA24E008A2DDB /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A682AFBA24E008A2DDB /* CollectionsView.swift */; };
+		3AB60A6B2AFBA263008A2DDB /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A6A2AFBA263008A2DDB /* UserView.swift */; };
+		3AB60A6D2AFBA355008A2DDB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A6C2AFBA355008A2DDB /* TabBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AB60A432AFA4F35008A2DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AB60A212AFA4F34008A2DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AB60A282AFA4F34008A2DDB;
+			remoteInfo = DuoCards;
+		};
+		3AB60A4D2AFA4F35008A2DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AB60A212AFA4F34008A2DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AB60A282AFA4F34008A2DDB;
+			remoteInfo = DuoCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3AB60A292AFA4F34008A2DDB /* DuoCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuoCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB60A2C2AFA4F34008A2DDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AB60A2E2AFA4F34008A2DDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3AB60A302AFA4F34008A2DDB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3AB60A362AFA4F34008A2DDB /* DuoCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DuoCards.xcdatamodel; sourceTree = "<group>"; };
+		3AB60A382AFA4F35008A2DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AB60A3B2AFA4F35008A2DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AB60A3D2AFA4F35008A2DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB60A422AFA4F35008A2DDB /* DuoCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuoCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB60A462AFA4F35008A2DDB /* DuoCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoCardsTests.swift; sourceTree = "<group>"; };
+		3AB60A4C2AFA4F35008A2DDB /* DuoCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuoCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB60A502AFA4F35008A2DDB /* DuoCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoCardsUITests.swift; sourceTree = "<group>"; };
+		3AB60A522AFA4F35008A2DDB /* DuoCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3AB60A5F2AFA621E008A2DDB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3AB60A612AFA6DB1008A2DDB /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		3AB60A682AFBA24E008A2DDB /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
+		3AB60A6A2AFBA263008A2DDB /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		3AB60A6C2AFBA355008A2DDB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AB60A262AFA4F34008A2DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AB60A3F2AFA4F35008A2DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AB60A492AFA4F35008A2DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AB60A202AFA4F34008A2DDB = {
+			isa = PBXGroup;
+			children = (
+				3AB60A2B2AFA4F34008A2DDB /* DuoCards */,
+				3AB60A452AFA4F35008A2DDB /* DuoCardsTests */,
+				3AB60A4F2AFA4F35008A2DDB /* DuoCardsUITests */,
+				3AB60A2A2AFA4F34008A2DDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AB60A2A2AFA4F34008A2DDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AB60A292AFA4F34008A2DDB /* DuoCards.app */,
+				3AB60A422AFA4F35008A2DDB /* DuoCardsTests.xctest */,
+				3AB60A4C2AFA4F35008A2DDB /* DuoCardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AB60A2B2AFA4F34008A2DDB /* DuoCards */ = {
+			isa = PBXGroup;
+			children = (
+				3AB60A2C2AFA4F34008A2DDB /* AppDelegate.swift */,
+				3AB60A2E2AFA4F34008A2DDB /* SceneDelegate.swift */,
+				3AB60A672AFA6EB8008A2DDB /* CoreData */,
+				3AB60A662AFA6EA9008A2DDB /* Assets */,
+				3AB60A652AFA6E97008A2DDB /* Controllers */,
+				3AB60A642AFA6E7E008A2DDB /* Views */,
+				3AB60A632AFA6E6F008A2DDB /* Model */,
+			);
+			path = DuoCards;
+			sourceTree = "<group>";
+		};
+		3AB60A452AFA4F35008A2DDB /* DuoCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AB60A462AFA4F35008A2DDB /* DuoCardsTests.swift */,
+			);
+			path = DuoCardsTests;
+			sourceTree = "<group>";
+		};
+		3AB60A4F2AFA4F35008A2DDB /* DuoCardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3AB60A502AFA4F35008A2DDB /* DuoCardsUITests.swift */,
+				3AB60A522AFA4F35008A2DDB /* DuoCardsUITestsLaunchTests.swift */,
+			);
+			path = DuoCardsUITests;
+			sourceTree = "<group>";
+		};
+		3AB60A632AFA6E6F008A2DDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AB60A5F2AFA621E008A2DDB /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AB60A642AFA6E7E008A2DDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3AB60A3A2AFA4F35008A2DDB /* LaunchScreen.storyboard */,
+				3AB60A302AFA4F34008A2DDB /* MainView.swift */,
+				3AB60A682AFBA24E008A2DDB /* CollectionsView.swift */,
+				3AB60A6A2AFBA263008A2DDB /* UserView.swift */,
+				3AB60A6C2AFBA355008A2DDB /* TabBarController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3AB60A652AFA6E97008A2DDB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AB60A612AFA6DB1008A2DDB /* MainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3AB60A662AFA6EA9008A2DDB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3AB60A382AFA4F35008A2DDB /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3AB60A672AFA6EB8008A2DDB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3AB60A3D2AFA4F35008A2DDB /* Info.plist */,
+				3AB60A352AFA4F34008A2DDB /* DuoCards.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AB60A282AFA4F34008A2DDB /* DuoCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AB60A562AFA4F35008A2DDB /* Build configuration list for PBXNativeTarget "DuoCards" */;
+			buildPhases = (
+				3AB60A252AFA4F34008A2DDB /* Sources */,
+				3AB60A262AFA4F34008A2DDB /* Frameworks */,
+				3AB60A272AFA4F34008A2DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuoCards;
+			productName = DuoCards;
+			productReference = 3AB60A292AFA4F34008A2DDB /* DuoCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AB60A412AFA4F35008A2DDB /* DuoCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AB60A592AFA4F35008A2DDB /* Build configuration list for PBXNativeTarget "DuoCardsTests" */;
+			buildPhases = (
+				3AB60A3E2AFA4F35008A2DDB /* Sources */,
+				3AB60A3F2AFA4F35008A2DDB /* Frameworks */,
+				3AB60A402AFA4F35008A2DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AB60A442AFA4F35008A2DDB /* PBXTargetDependency */,
+			);
+			name = DuoCardsTests;
+			productName = DuoCardsTests;
+			productReference = 3AB60A422AFA4F35008A2DDB /* DuoCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3AB60A4B2AFA4F35008A2DDB /* DuoCardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AB60A5C2AFA4F35008A2DDB /* Build configuration list for PBXNativeTarget "DuoCardsUITests" */;
+			buildPhases = (
+				3AB60A482AFA4F35008A2DDB /* Sources */,
+				3AB60A492AFA4F35008A2DDB /* Frameworks */,
+				3AB60A4A2AFA4F35008A2DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AB60A4E2AFA4F35008A2DDB /* PBXTargetDependency */,
+			);
+			name = DuoCardsUITests;
+			productName = DuoCardsUITests;
+			productReference = 3AB60A4C2AFA4F35008A2DDB /* DuoCardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AB60A212AFA4F34008A2DDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3AB60A282AFA4F34008A2DDB = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					3AB60A412AFA4F35008A2DDB = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 3AB60A282AFA4F34008A2DDB;
+					};
+					3AB60A4B2AFA4F35008A2DDB = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 3AB60A282AFA4F34008A2DDB;
+					};
+				};
+			};
+			buildConfigurationList = 3AB60A242AFA4F34008A2DDB /* Build configuration list for PBXProject "DuoCards" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AB60A202AFA4F34008A2DDB;
+			productRefGroup = 3AB60A2A2AFA4F34008A2DDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AB60A282AFA4F34008A2DDB /* DuoCards */,
+				3AB60A412AFA4F35008A2DDB /* DuoCardsTests */,
+				3AB60A4B2AFA4F35008A2DDB /* DuoCardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AB60A272AFA4F34008A2DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB60A3C2AFA4F35008A2DDB /* LaunchScreen.storyboard in Resources */,
+				3AB60A392AFA4F35008A2DDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AB60A402AFA4F35008A2DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AB60A4A2AFA4F35008A2DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AB60A252AFA4F34008A2DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB60A602AFA621E008A2DDB /* Model.swift in Sources */,
+				3AB60A692AFBA24E008A2DDB /* CollectionsView.swift in Sources */,
+				3AB60A312AFA4F34008A2DDB /* MainView.swift in Sources */,
+				3AB60A6D2AFBA355008A2DDB /* TabBarController.swift in Sources */,
+				3AB60A6B2AFBA263008A2DDB /* UserView.swift in Sources */,
+				3AB60A2D2AFA4F34008A2DDB /* AppDelegate.swift in Sources */,
+				3AB60A372AFA4F34008A2DDB /* DuoCards.xcdatamodeld in Sources */,
+				3AB60A622AFA6DB1008A2DDB /* MainController.swift in Sources */,
+				3AB60A2F2AFA4F34008A2DDB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AB60A3E2AFA4F35008A2DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB60A472AFA4F35008A2DDB /* DuoCardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AB60A482AFA4F35008A2DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AB60A532AFA4F35008A2DDB /* DuoCardsUITestsLaunchTests.swift in Sources */,
+				3AB60A512AFA4F35008A2DDB /* DuoCardsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AB60A442AFA4F35008A2DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AB60A282AFA4F34008A2DDB /* DuoCards */;
+			targetProxy = 3AB60A432AFA4F35008A2DDB /* PBXContainerItemProxy */;
+		};
+		3AB60A4E2AFA4F35008A2DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AB60A282AFA4F34008A2DDB /* DuoCards */;
+			targetProxy = 3AB60A4D2AFA4F35008A2DDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AB60A3A2AFA4F35008A2DDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AB60A3B2AFA4F35008A2DDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AB60A542AFA4F35008A2DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AB60A552AFA4F35008A2DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AB60A572AFA4F35008A2DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDMT9LXGTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuoCards/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = da.DuoCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AB60A582AFA4F35008A2DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDMT9LXGTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuoCards/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = da.DuoCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3AB60A5A2AFA4F35008A2DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDMT9LXGTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = da.DuoCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuoCards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DuoCards";
+			};
+			name = Debug;
+		};
+		3AB60A5B2AFA4F35008A2DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDMT9LXGTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = da.DuoCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuoCards.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DuoCards";
+			};
+			name = Release;
+		};
+		3AB60A5D2AFA4F35008A2DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDMT9LXGTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = da.DuoCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuoCards;
+			};
+			name = Debug;
+		};
+		3AB60A5E2AFA4F35008A2DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SDMT9LXGTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = da.DuoCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuoCards;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AB60A242AFA4F34008A2DDB /* Build configuration list for PBXProject "DuoCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB60A542AFA4F35008A2DDB /* Debug */,
+				3AB60A552AFA4F35008A2DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AB60A562AFA4F35008A2DDB /* Build configuration list for PBXNativeTarget "DuoCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB60A572AFA4F35008A2DDB /* Debug */,
+				3AB60A582AFA4F35008A2DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AB60A592AFA4F35008A2DDB /* Build configuration list for PBXNativeTarget "DuoCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB60A5A2AFA4F35008A2DDB /* Debug */,
+				3AB60A5B2AFA4F35008A2DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AB60A5C2AFA4F35008A2DDB /* Build configuration list for PBXNativeTarget "DuoCardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AB60A5D2AFA4F35008A2DDB /* Debug */,
+				3AB60A5E2AFA4F35008A2DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3AB60A352AFA4F34008A2DDB /* DuoCards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3AB60A362AFA4F34008A2DDB /* DuoCards.xcdatamodel */,
+			);
+			currentVersion = 3AB60A362AFA4F34008A2DDB /* DuoCards.xcdatamodel */;
+			path = DuoCards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3AB60A212AFA4F34008A2DDB /* Project object */;
+}

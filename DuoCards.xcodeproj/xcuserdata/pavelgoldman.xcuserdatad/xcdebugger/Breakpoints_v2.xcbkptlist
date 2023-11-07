@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1AC0FEFE-D204-4735-B2F8-986ED01BBAD7"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50DA5F50-3F77-4A21-ADB7-F4D739E3E3BE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DuoCards/Views/MainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "50DA5F50-3F77-4A21-ADB7-F4D739E3E3BE - 2e425fa5e274dfe9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DuoCards.MainView.viewDidLoad() -&gt; ()"
+                  moduleName = "DuoCards"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelgoldman/Documents/Documents%20-%20Pavel%E2%80%99s%20MacBook%20Pro/Extense/DuoCards/DuoCards/Views/MainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "50DA5F50-3F77-4A21-ADB7-F4D739E3E3BE - 2e425fa5e274dfe9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DuoCards.MainView.viewDidLoad() -&gt; ()"
+                  moduleName = "DuoCards"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavelgoldman/Documents/Documents%20-%20Pavel%E2%80%99s%20MacBook%20Pro/Extense/DuoCards/DuoCards/Views/MainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
