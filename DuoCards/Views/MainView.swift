@@ -21,10 +21,10 @@ class MainView: UIViewController {
         self.view.backgroundColor = .white
         view.addSubview(mainView)
         addConstraints()
-        // Do any additional setup after loading the view.
     }
     
     private func addConstraints() {
+        
         var constraints = [NSLayoutConstraint]()
         
         // Add

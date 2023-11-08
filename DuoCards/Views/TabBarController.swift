@@ -11,7 +11,6 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.setupTaps()
         self.tabBar.tintColor = .systemBlue
         self.tabBar.backgroundColor = .white
@@ -43,9 +42,6 @@ class TabBarController: UITabBarController {
         nav.tabBarItem.image = image
         nav.navigationBar.backgroundColor = .white
         nav.viewControllers.first?.navigationItem.title = title
-        
-        
-        
         return nav
         
     }
