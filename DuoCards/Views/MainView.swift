@@ -8,33 +8,32 @@
 import UIKit
 
 class MainView: UIViewController {
-
-    private let mainView:UIView  = {
-        let mainView = UIView()
-        mainView.translatesAutoresizingMaskIntoConstraints = false
-        mainView.backgroundColor = UIColor(named: "BackGroundAccentColor")
-        return mainView
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
-        view.addSubview(mainView)
-        addConstraints()
+        self.view.backgroundColor = UIColor(named: "BackGroundAccentColor")
     }
+    
+    
+    
+    
+    
+    
+    
+    
     
     private func addConstraints() {
         
         var constraints = [NSLayoutConstraint]()
-        
-        // Add
-        constraints.append(mainView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor))
-        constraints.append(mainView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor))
-        constraints.append(mainView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor))
-        constraints.append(mainView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor))
-
-        // Activate (Applying)
-        NSLayoutConstraint.activate(constraints)
+    
+//        // Add
+//        constraints.append(self.view.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor))
+//        constraints.append(self.view.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor))
+//        constraints.append(self.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor))
+//        constraints.append(self.view.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor))
+//
+//        // Activate (Applying)
+//        NSLayoutConstraint.activate(constraints)
     }
 
 }

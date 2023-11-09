@@ -9,6 +9,7 @@ import UIKit
 
 class CollectionsView: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(named: "BackGroundAccentColor")

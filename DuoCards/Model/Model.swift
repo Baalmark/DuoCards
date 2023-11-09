@@ -11,7 +11,7 @@ import UIKit
 
 //MARK: Main Model
 struct DuoCardsModel {
-    
+    var theme:Themes = .light
     var addedCards:[Card] = []
     var allCollections:[CardCollection] = []
     var time:Date = Date()
@@ -79,4 +79,13 @@ struct CardCollection {
     var level:Level
     var image:UIImage
     var phase:LearningPhase
+}
+
+
+
+enum Themes {
+    case light
+    case dark
+    case pink
+    case gold
 }
