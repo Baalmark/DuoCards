@@ -26,14 +26,16 @@ struct Card {
     var translationOfAssociation:String
     var memoryStage:CardMemoryProgression
     var cardStatus:CardStatus
+    var phase:LearningPhase
     
-    init(title: String, association: String, translation: String, translationOfAssociation: String, memoryStage: CardMemoryProgression = .entry, cardStatus: CardStatus = .neutral) {
+    init(title: String, association: String, translation: String, translationOfAssociation: String, memoryStage: CardMemoryProgression = .entry, cardStatus: CardStatus = .neutral, phase:LearningPhase) {
         self.title = title
         self.association = association
         self.translation = translation
         self.translationOfAssociation = translationOfAssociation
         self.memoryStage = memoryStage
         self.cardStatus = cardStatus
+        self.phase = phase
     }
 }
 
@@ -64,21 +66,21 @@ enum CardMemoryProgression {
     case learned // Learned
 }
 //MARK: Learning phase for card selecting
-enum LearningPhase {
-    case notStarted
-    case notCompleted
-    case completed
+enum LearningPhase:String {
+    case toLearn = "To Learn"
+    case notCompleted = "Known"
+    case completed = "Learned"
 }
 
 //MARK: Card Collection Struct
 struct CardCollection {
-
+    
     var cards:[Card]
     var title:String
     var description:String
     var level:Level
     var image:UIImage
-    var phase:LearningPhase
+    var cardStatus:CardStatus
 }
 
 
@@ -89,3 +91,58 @@ enum Themes {
     case pink
     case gold
 }
+
+
+extension UILabel {
+    
+    func addTrailing(image: UIImage?, text:String, color:UIColor) {
+        if let img = image {
+            
+            let textAttachment = NSTextAttachment()
+            
+            let attributedStringWithImage = NSAttributedString(attachment: textAttachment);
+            
+            let stringToDisplay = text
+            
+            let fullAttributedString = NSMutableAttributedString(string:"\(stringToDisplay) ")
+            fullAttributedString.append(attributedStringWithImage)
+            
+            self.attributedText = fullAttributedString
+            
+            let templateImage = img.withRenderingMode(.alwaysTemplate)
+            textAttachment.image = templateImage
+            
+            fullAttributedString.addAttribute(
+                NSAttributedString.Key.foregroundColor,
+                value: UIColor.green,
+                range: NSMakeRange(stringToDisplay.count, attributedStringWithImage.length))
+        }
+    }
+    
+    func addLeading(image: UIImage?, text:String, color:UIColor) {
+        if let img = image {
+            
+            let textAttachment = NSTextAttachment()
+            
+            let attributedStringWithImage = NSAttributedString(attachment: textAttachment);
+            
+            let stringToDisplay = text
+            
+            let fullAttributedString = NSMutableAttributedString(string:"\(stringToDisplay) ")
+            fullAttributedString.append(attributedStringWithImage)
+            
+            self.attributedText = fullAttributedString
+            
+            let templateImage = img.withRenderingMode(.alwaysTemplate)
+            textAttachment.image = templateImage
+            
+            fullAttributedString.addAttribute(
+                NSAttributedString.Key.foregroundColor,
+                value: UIColor.green,
+                range: NSMakeRange(stringToDisplay.count, attributedStringWithImage.length))
+        }
+    }
+    
+}
+
+

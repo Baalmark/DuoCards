@@ -18,4 +18,9 @@ class MainController {
     
     let model:DuoCardsModel
     
+    func getCountOfCardsCertainPhase(phase:LearningPhase) -> Int {
+        return model.addedCards.filter { card in
+            return card.phase == phase
+        }.count
+    }
 }

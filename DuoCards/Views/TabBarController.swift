@@ -8,7 +8,7 @@
 import UIKit
 
 class TabBarController: UITabBarController {
-
+    
     
     
     override func viewDidLoad() {
@@ -22,14 +22,14 @@ class TabBarController: UITabBarController {
     
     
     
-        //MARK: - Tab setup
+    //MARK: - Tab setup
     
     private func setupTaps() {
         
         let homeImage = UIImage(systemName: "rectangle.portrait.on.rectangle.portrait.angled.fill")
         let mainViewLeftButton = UIImage(systemName: "paintpalette.fill")
         let mainViewRightButton = UIImage(systemName: "chart.bar.xaxis")
-        let mainView = self.createNav(with: "Home", and: homeImage,leftButtonImage: mainViewLeftButton, rightButtonImage: mainViewRightButton, vc: MainView())
+        let mainView = self.createNav(with: "Home", and: homeImage,leftButtonImage: mainViewLeftButton, rightButtonImage: mainViewRightButton, vc: MainViewController())
         
         let collectionImage = UIImage(systemName: "book.fill")
         let collViewLeftButton = UIImage(systemName: "rectangle.and.text.magnifyingglass")
@@ -60,14 +60,14 @@ class TabBarController: UITabBarController {
         if leftButtonImage != nil {
             let leftButton = UIBarButtonItem()
             leftButton.image = leftButtonImage
-            leftButton.tintColor = .black
+            leftButton.tintColor = .gray
             nav.viewControllers.first?.navigationItem.leftBarButtonItem = leftButton
         }
         
         if rightButtonImage != nil {
             let rightButton = UIBarButtonItem()
             rightButton.image = rightButtonImage
-            rightButton.tintColor = .black
+            rightButton.tintColor = .gray
             nav.viewControllers.first?.navigationItem.rightBarButtonItem = rightButton
             
         }
@@ -75,6 +75,6 @@ class TabBarController: UITabBarController {
         
     }
     
-
-
+    
+    
 }
