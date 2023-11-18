@@ -56,7 +56,6 @@ class CounterCertainTypesOfCardView: UIView {
     
     
     func setupView() {
-        
         let imageQuestionMark = UIImage(systemName: "questionmark.circle")
         
         if let type = typeCard {
@@ -79,7 +78,6 @@ class CounterCertainTypesOfCardView: UIView {
                 headerTitle.textColor = .green
             }
         }
-        
         self.addSubview(headerView)
     }
     

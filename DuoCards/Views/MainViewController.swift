@@ -55,7 +55,6 @@ class MainViewController: UIViewController {
     
     func addViewToStackView() {
         let typesCards:[LearningPhase] = [LearningPhase.toLearn,LearningPhase.notCompleted,LearningPhase.completed]
-        
         for typeCard in typesCards {
             let frame = CGRect(x: 0, y: 0, width: widthView, height: widthView)
             let countCards = MainController.shared.getCountOfCardsCertainPhase(phase: typeCard)
