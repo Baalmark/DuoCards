@@ -31,7 +31,6 @@ class CounterCertainTypesOfCardView: UIView {
     }()
     
     lazy var headerView: UIView = {
-        print(widthView)
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: widthView, height: widthView - 20))
         headerView.backgroundColor = .white
         headerView.layer.borderWidth = 0.5
@@ -61,9 +60,9 @@ class CounterCertainTypesOfCardView: UIView {
         if let type = typeCard {
             switch type {
             case .toLearn:
-                countTitle.textColor = UIColor(named: "GreenColor")
-                headerTitle.textColor = UIColor(named: "GreenColor")
-                headerTitle.addTrailing(image: imageQuestionMark, text: type.rawValue, color: UIColor(named: "GreenColor") ?? .green)
+                countTitle.textColor = UIColor(named: "GreenColorCustom")
+                headerTitle.textColor = UIColor(named: "GreenColorCustom")
+                headerTitle.addTrailing(image: imageQuestionMark, text: type.rawValue, color: UIColor(named: "GreenColorCustom") ?? .green)
                 
             case .notCompleted:
                 countTitle.textColor = .systemBlue
@@ -73,9 +72,6 @@ class CounterCertainTypesOfCardView: UIView {
                 countTitle.textColor = .systemYellow
                 headerTitle.textColor = .systemYellow
                 headerTitle.addTrailing(image: imageQuestionMark, text: type.rawValue, color: .systemYellow)
-            case nil:
-                countTitle.textColor = .green
-                headerTitle.textColor = .green
             }
         }
         self.addSubview(headerView)
