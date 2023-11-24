@@ -17,7 +17,7 @@ class MainController {
     }
     
     let model:DuoCardsModel
-    
+    var isShowedCardList:Bool = false
     func getCountOfCardsCertainPhase(phase:LearningPhase) -> Int {
         return model.addedCards.filter { card in
             return card.phase == phase

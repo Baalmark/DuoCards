@@ -22,6 +22,8 @@
 		3AB60A6B2AFBA263008A2DDB /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A6A2AFBA263008A2DDB /* UserView.swift */; };
 		3AB60A6D2AFBA355008A2DDB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A6C2AFBA355008A2DDB /* TabBarController.swift */; };
 		3AB60A6F2B078703008A2DDB /* CounterCertainTypesOfCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A6E2B078703008A2DDB /* CounterCertainTypesOfCardView.swift */; };
+		3AB60A712B10B9C5008A2DDB /* CardsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A702B10B9C5008A2DDB /* CardsListViewController.swift */; };
+		3AB60A732B10D018008A2DDB /* SearchCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A722B10D018008A2DDB /* SearchCardsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		3AB60A6A2AFBA263008A2DDB /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		3AB60A6C2AFBA355008A2DDB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3AB60A6E2B078703008A2DDB /* CounterCertainTypesOfCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCertainTypesOfCardView.swift; sourceTree = "<group>"; };
+		3AB60A702B10B9C5008A2DDB /* CardsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListViewController.swift; sourceTree = "<group>"; };
+		3AB60A722B10D018008A2DDB /* SearchCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 			children = (
 				3AB60A3A2AFA4F35008A2DDB /* LaunchScreen.storyboard */,
 				3AB60A302AFA4F34008A2DDB /* MainViewController.swift */,
+				3AB60A722B10D018008A2DDB /* SearchCardsView.swift */,
+				3AB60A702B10B9C5008A2DDB /* CardsListViewController.swift */,
 				3AB60A6E2B078703008A2DDB /* CounterCertainTypesOfCardView.swift */,
 				3AB60A682AFBA24E008A2DDB /* CollectionsView.swift */,
 				3AB60A6A2AFBA263008A2DDB /* UserView.swift */,
@@ -321,9 +327,11 @@
 				3AB60A6D2AFBA355008A2DDB /* TabBarController.swift in Sources */,
 				3AB60A6B2AFBA263008A2DDB /* UserView.swift in Sources */,
 				3AB60A2D2AFA4F34008A2DDB /* AppDelegate.swift in Sources */,
+				3AB60A712B10B9C5008A2DDB /* CardsListViewController.swift in Sources */,
 				3AB60A372AFA4F34008A2DDB /* DuoCards.xcdatamodeld in Sources */,
 				3AB60A622AFA6DB1008A2DDB /* MainController.swift in Sources */,
 				3AB60A6F2B078703008A2DDB /* CounterCertainTypesOfCardView.swift in Sources */,
+				3AB60A732B10D018008A2DDB /* SearchCardsView.swift in Sources */,
 				3AB60A2F2AFA4F34008A2DDB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
