@@ -34,7 +34,7 @@ class TabBarController: UITabBarController {
         let collectionImage = UIImage(systemName: "book.fill")
         let collViewLeftButton = UIImage(systemName: "rectangle.and.text.magnifyingglass")
         let collViewRightButton = UIImage(systemName: "line.3.horizontal")
-        let collectionView = self.createNav(with: "Collection", and: collectionImage,leftButtonImage: collViewLeftButton, rightButtonImage: collViewRightButton, vc: CollectionsView())
+        let collectionView = self.createNav(with: "Collection", and: collectionImage,leftButtonImage: collViewLeftButton, rightButtonImage: collViewRightButton, vc: CollectionsViewController())
         
         let userImage = UIImage(systemName: "person.fill")
         let userView = self.createNav(with: "User", and: userImage, vc: UserView())

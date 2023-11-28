@@ -49,7 +49,7 @@ class MainViewController: UIViewController {
         return someView
     }()
     
-    lazy var noCardsToLearnLable:UILabel = {
+    lazy var noCardsToLearnLabel:UILabel = {
         let label = UILabel()
         label.text = "No cards to learn at the moment"
         label.font = .systemFont(ofSize: 12,weight: .light)
@@ -87,7 +87,7 @@ class MainViewController: UIViewController {
     //MARK: Configure No Cards Message
     private func configureNoCardsMessage() {
         
-        [self.noCardsToLearnLable,
+        [self.noCardsToLearnLabel,
          self.addmoreCardsLabel,
          self.TestmeFromKnownCards].forEach { messageView.addArrangedSubview($0) }
         //Constraints

@@ -18,12 +18,14 @@
 		3AB60A532AFA4F35008A2DDB /* DuoCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A522AFA4F35008A2DDB /* DuoCardsUITestsLaunchTests.swift */; };
 		3AB60A602AFA621E008A2DDB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A5F2AFA621E008A2DDB /* Model.swift */; };
 		3AB60A622AFA6DB1008A2DDB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A612AFA6DB1008A2DDB /* MainController.swift */; };
-		3AB60A692AFBA24E008A2DDB /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A682AFBA24E008A2DDB /* CollectionsView.swift */; };
+		3AB60A692AFBA24E008A2DDB /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A682AFBA24E008A2DDB /* CollectionsViewController.swift */; };
 		3AB60A6B2AFBA263008A2DDB /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A6A2AFBA263008A2DDB /* UserView.swift */; };
 		3AB60A6D2AFBA355008A2DDB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A6C2AFBA355008A2DDB /* TabBarController.swift */; };
 		3AB60A6F2B078703008A2DDB /* CounterCertainTypesOfCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A6E2B078703008A2DDB /* CounterCertainTypesOfCardView.swift */; };
 		3AB60A712B10B9C5008A2DDB /* CardsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A702B10B9C5008A2DDB /* CardsListViewController.swift */; };
 		3AB60A732B10D018008A2DDB /* SearchCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A722B10D018008A2DDB /* SearchCardsView.swift */; };
+		3AB60A752B15F13A008A2DDB /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A742B15F13A008A2DDB /* CollectionView.swift */; };
+		3AB60A772B15F27B008A2DDB /* TypeOfDifficultyLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A762B15F27B008A2DDB /* TypeOfDifficultyLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +61,14 @@
 		3AB60A522AFA4F35008A2DDB /* DuoCardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuoCardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3AB60A5F2AFA621E008A2DDB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3AB60A612AFA6DB1008A2DDB /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
-		3AB60A682AFBA24E008A2DDB /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
+		3AB60A682AFBA24E008A2DDB /* CollectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
 		3AB60A6A2AFBA263008A2DDB /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		3AB60A6C2AFBA355008A2DDB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3AB60A6E2B078703008A2DDB /* CounterCertainTypesOfCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCertainTypesOfCardView.swift; sourceTree = "<group>"; };
 		3AB60A702B10B9C5008A2DDB /* CardsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsListViewController.swift; sourceTree = "<group>"; };
 		3AB60A722B10D018008A2DDB /* SearchCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardsView.swift; sourceTree = "<group>"; };
+		3AB60A742B15F13A008A2DDB /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		3AB60A762B15F27B008A2DDB /* TypeOfDifficultyLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfDifficultyLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +163,9 @@
 				3AB60A722B10D018008A2DDB /* SearchCardsView.swift */,
 				3AB60A702B10B9C5008A2DDB /* CardsListViewController.swift */,
 				3AB60A6E2B078703008A2DDB /* CounterCertainTypesOfCardView.swift */,
-				3AB60A682AFBA24E008A2DDB /* CollectionsView.swift */,
+				3AB60A682AFBA24E008A2DDB /* CollectionsViewController.swift */,
+				3AB60A742B15F13A008A2DDB /* CollectionView.swift */,
+				3AB60A762B15F27B008A2DDB /* TypeOfDifficultyLabelView.swift */,
 				3AB60A6A2AFBA263008A2DDB /* UserView.swift */,
 				3AB60A6C2AFBA355008A2DDB /* TabBarController.swift */,
 			);
@@ -322,11 +328,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AB60A602AFA621E008A2DDB /* Model.swift in Sources */,
-				3AB60A692AFBA24E008A2DDB /* CollectionsView.swift in Sources */,
+				3AB60A692AFBA24E008A2DDB /* CollectionsViewController.swift in Sources */,
 				3AB60A312AFA4F34008A2DDB /* MainViewController.swift in Sources */,
 				3AB60A6D2AFBA355008A2DDB /* TabBarController.swift in Sources */,
 				3AB60A6B2AFBA263008A2DDB /* UserView.swift in Sources */,
+				3AB60A752B15F13A008A2DDB /* CollectionView.swift in Sources */,
 				3AB60A2D2AFA4F34008A2DDB /* AppDelegate.swift in Sources */,
+				3AB60A772B15F27B008A2DDB /* TypeOfDifficultyLabelView.swift in Sources */,
 				3AB60A712B10B9C5008A2DDB /* CardsListViewController.swift in Sources */,
 				3AB60A372AFA4F34008A2DDB /* DuoCards.xcdatamodeld in Sources */,
 				3AB60A622AFA6DB1008A2DDB /* MainController.swift in Sources */,

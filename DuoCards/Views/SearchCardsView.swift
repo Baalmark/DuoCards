@@ -19,6 +19,7 @@ class SearchCardsView: UIView {
         configureSearchCardsStackView()
     }
     
+    //MARK: Lazy vars
     lazy var searchButton:UIButton = getSearchButton()
     lazy var searchCardsStackView:UIStackView = getSearchCardsStackView()
     lazy var showCardsButton:UIButton = {
@@ -89,7 +90,7 @@ class SearchCardsView: UIView {
         spacerWidthConstraint.priority = .defaultLow // ensures it will not "overgrow"
         spacerWidthConstraint.isActive = true
         
-        searchCardsStackView.layoutMargins = UIEdgeInsets(top: 10, left: 20, bottom: 0, right: 20)
+        searchCardsStackView.layoutMargins = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 10)
         searchCardsStackView.isLayoutMarginsRelativeArrangement = true
         
         
@@ -102,7 +103,7 @@ class SearchCardsView: UIView {
         if searchCardsStackView.arrangedSubviews.count > 0 {
             let separator = UIView()
             separator.widthAnchor.constraint(equalToConstant: 1).isActive = true
-            separator.backgroundColor = .black
+            separator.backgroundColor = .gray
             searchCardsStackView.addArrangedSubview(separator)
             separator.heightAnchor.constraint(equalTo: searchCardsStackView.heightAnchor, multiplier: 0.6).isActive = true
         }

@@ -13,7 +13,7 @@ import UIKit
 struct DuoCardsModel {
     var theme:Themes = .light
     var addedCards:[Card] = []
-    var allCollections:[CardCollection] = []
+    var allCollections:[CardCollection] = loadedCollections
     var time:Date = Date()
     
 }
@@ -47,10 +47,10 @@ enum CardStatus {
 }
 
 //MARK: Level of card collection
-enum Level {
-    case beginner
-    case intermediate
-    case advanced
+enum Level:String {
+    case beginner = "beginner"
+    case intermediate = "intermediate"
+    case advanced = "advanced"
 }
 
 //MARK: Card memory progression // Learnin' progression
@@ -93,6 +93,9 @@ enum Themes {
 }
 
 
+
+//MARK: Extensions
+//MARK:  UILable extension
 extension UILabel {
     
     func addTrailing(image: UIImage?, text:String, color:UIColor) {
@@ -147,7 +150,7 @@ extension UILabel {
 
 
 
-
+//MARK: UIView extension
 extension UIView {
     
     @discardableResult
@@ -197,3 +200,34 @@ extension UIView {
     
 }
 
+//MARK: Static vars
+extension DuoCardsModel {
+    
+    static let loadedCards:[Card] = [
+        Card(title: "Hello", association: "Hell my friend", translation: "Привет", translationOfAssociation: "Привет мой друг", phase: .toLearn),
+        Card(title: "I", association: "I spent my money", translation: "Я", translationOfAssociation: "Я потратил мои деньги", phase: .toLearn),
+        Card(title: "You", association: "You are bad person", translation: "Ты", translationOfAssociation: "Ты плохой человек", phase: .toLearn),
+        Card(title: "Bye", association: "Bye, my friend", translation: "Пока", translationOfAssociation: "Пока, мой друг", phase: .toLearn),
+        Card(title: "Sun", association: "The sun i shining", translation: "Солнце", translationOfAssociation: "Солнце светит", phase: .toLearn),
+        Card(title: "Mother", association: "Mother is cooking", translation: "Мама", translationOfAssociation: "Мама готовит кушать", phase: .toLearn),
+        Card(title: "Father", association: "Father is going to the job", translation: "Папа", translationOfAssociation: "Папа идёт на работу", phase: .toLearn),
+        Card(title: "Car", association: "The car rides upon the road", translation: "Машина", translationOfAssociation: "Машина едет по дороге", phase: .toLearn),
+        Card(title: "Three", association: "The three growns up on the out-of-doors", translation: "Дерево", translationOfAssociation: "Дерево ростет во дворе", phase: .toLearn),
+        Card(title: "Air", association: "There is a fresh air on the outdoors ", translation: "Воздух", translationOfAssociation: "На улице свежий воздух", phase: .toLearn),
+        Card(title: "Light", association: "The light is shining brightly", translation: "Свет", translationOfAssociation: "Свет светит ярко", phase: .toLearn),
+        Card(title: "He", association: "He stealed on my eyes the product from the shop", translation: "Он", translationOfAssociation: "Он украл на моих глазах товар с магазина", phase: .toLearn),
+    ]
+    
+    
+    static let loadedCollections:[CardCollection] =
+    [
+        CardCollection(cards: loadedCards, title: "Test title1", description: "Testing1", level: .beginner, image: UIImage(named: "TestImage") ?? UIImage(), cardStatus: .neutral),
+        CardCollection(cards: loadedCards, title: "Test title2", description: "Testing2", level: .beginner, image: UIImage(named: "TestImage") ?? UIImage(), cardStatus: .neutral),
+        CardCollection(cards: loadedCards, title: "Test title3", description: "Testing3", level: .beginner, image: UIImage(named: "TestImage") ?? UIImage(), cardStatus: .neutral),
+        CardCollection(cards: loadedCards, title: "Test title4", description: "Testing4", level: .beginner, image: UIImage(named: "TestImage") ?? UIImage(), cardStatus: .neutral),
+        CardCollection(cards: loadedCards, title: "Test title5", description: "Testing5", level: .beginner, image: UIImage(named: "TestImage") ?? UIImage(), cardStatus: .neutral),
+        CardCollection(cards: loadedCards, title: "Test title6", description: "Testing6", level: .beginner, image: UIImage(named: "TestImage") ?? UIImage(), cardStatus: .neutral),
+
+        
+    ]
+}
