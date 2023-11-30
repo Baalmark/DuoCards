@@ -99,6 +99,8 @@ enum Themes {
 extension UILabel {
     
     func addTrailing(image: UIImage?, text:String, color:UIColor) {
+        
+        
         if let img = image {
             
             let textAttachment = NSTextAttachment()
@@ -108,16 +110,18 @@ extension UILabel {
             let stringToDisplay = text
             
             let fullAttributedString = NSMutableAttributedString(string:"\(stringToDisplay) ")
-            fullAttributedString.append(attributedStringWithImage)
+            fullAttributedString.addImageAttachment(image: img, font: .systemFont(ofSize: 30), textColor: color)
+//            fullAttributedString.append(attributedStringWithImage)
             
             self.attributedText = fullAttributedString
             
             let templateImage = img.withRenderingMode(.alwaysTemplate)
+            
             textAttachment.image = templateImage
             
             fullAttributedString.addAttribute(
                 NSAttributedString.Key.foregroundColor,
-                value: UIColor.green,
+                value: color,
                 range: NSMakeRange(stringToDisplay.count, attributedStringWithImage.length))
         }
     }
@@ -141,7 +145,7 @@ extension UILabel {
             
             fullAttributedString.addAttribute(
                 NSAttributedString.Key.foregroundColor,
-                value: UIColor.green,
+                value: color,
                 range: NSMakeRange(stringToDisplay.count, attributedStringWithImage.length))
         }
     }
@@ -231,3 +235,44 @@ extension DuoCardsModel {
         
     ]
 }
+
+
+
+extension NSMutableAttributedString {
+    func addImageAttachment(image: UIImage, font: UIFont, textColor: UIColor, size: CGSize? = nil) {
+        let textAttributes: [NSAttributedString.Key: Any] = [
+            .strokeColor: textColor,
+            .foregroundColor: textColor,
+            .font: font
+        ]
+
+        self.append(
+            NSAttributedString.init(
+                //U+200C (zero-width non-joiner) is a non-printing character. It will not paste unnecessary space.
+                string: "\u{200c}",
+                attributes: textAttributes
+            )
+        )
+
+        let attachment = NSTextAttachment()
+        attachment.image = image.withRenderingMode(.alwaysTemplate)
+        //P.S. font.capHeight sets height of image equal to font size.
+        let imageSize = size ?? CGSize.init(width: font.capHeight, height: font.capHeight)
+        attachment.bounds = CGRect(
+            x: 0,
+            y: -font.capHeight / 4,
+            width: imageSize.width,
+            height: imageSize.height
+        )
+        let attachmentString = NSMutableAttributedString(attachment: attachment)
+        attachmentString.addAttributes(
+            textAttributes,
+            range: NSMakeRange(
+                0,
+                attachmentString.length
+            )
+        )
+        self.append(attachmentString)
+    }
+}
+

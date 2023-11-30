@@ -9,31 +9,34 @@ import UIKit
 
 class CollectionsViewController: UIViewController {
     
-    let widthCollectionView:CGFloat = (UIScreen.main.bounds.width - 50) / 2
+    let widthCollectionView:CGFloat = (UIScreen.main.bounds.width - 40)
     let heightCollectionView:CGFloat = 180
     
     
     
     private let collectionViewStack:UIStackView = {
         let stack = UIStackView()
-        stack.axis = .vertical
+        stack.axis            = .vertical
+        stack.distribution    = .fill
+        stack.alignment       = .fill
+        stack.spacing = 20
         stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.distribution = .fillEqually
-        stack.spacing = 0
-        stack.alignment = .fill
+
+        
         return stack
     }()
     
     
     private let scrollView: UIScrollView = {
-    let view = UIScrollView()
+        let view = UIScrollView()
+        
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
     }()
 
     private let subView1: UIView = {
     let view = UIView()
-    view.heightAnchor.constraint(equalToConstant: 180).isActive = true
+    view.heightAnchor.constraint(equalToConstant: 1).isActive = true
     view.backgroundColor = UIColor.blue
     return view
     }()
@@ -58,28 +61,28 @@ class CollectionsViewController: UIViewController {
             print("Here")
             let frame = CGRect(x: 0, y: 0, width: widthCollectionView, height: heightCollectionView)
             let collectionView = CollectionView(frame: frame, collection: coll)
+            collectionView.heightAnchor.constraint(equalToConstant: 300).isActive = true
             collectionViewStack.addArrangedSubview(collectionView)
             
         }
         
-        collectionViewStack.addArrangedSubview(subView1)
+//        collectionViewStack.addArrangedSubview(subView1)
     }
     
     private func setScrollView() {
         let margins = view.layoutMarginsGuide
         view.addSubview(scrollView)
-        
         scrollView.addSubview(collectionViewStack)
         scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        scrollView.topAnchor.constraint(equalTo: margins.topAnchor).isActive = true
+        scrollView.topAnchor.constraint(equalTo: margins.topAnchor,constant: 20).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: margins.bottomAnchor).isActive = true
         
-        collectionViewStack.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
-        collectionViewStack.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        
+        collectionViewStack.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor,constant: 20).isActive = true
+        collectionViewStack.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor,constant: -20).isActive = true
         collectionViewStack.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
         collectionViewStack.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
-        collectionViewStack.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
         addViewToStackView()
         
     }
