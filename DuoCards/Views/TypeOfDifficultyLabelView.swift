@@ -8,7 +8,7 @@
 import UIKit
 
 class TypeOfDifficultyLabelView: UIView {
-
+    
     
     var difficulty:Level?
     let diffLabel = UILabel()

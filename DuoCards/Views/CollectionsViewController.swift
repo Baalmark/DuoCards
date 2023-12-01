@@ -21,7 +21,7 @@ class CollectionsViewController: UIViewController {
         stack.alignment       = .fill
         stack.spacing = 20
         stack.translatesAutoresizingMaskIntoConstraints = false
-
+        
         
         return stack
     }()
@@ -30,15 +30,15 @@ class CollectionsViewController: UIViewController {
     private let scrollView: UIScrollView = {
         let view = UIScrollView()
         
-    view.translatesAutoresizingMaskIntoConstraints = false
-    return view
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
-
+    
     private let subView1: UIView = {
-    let view = UIView()
-    view.heightAnchor.constraint(equalToConstant: 1).isActive = true
-    view.backgroundColor = UIColor.blue
-    return view
+        let view = UIView()
+        view.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        view.backgroundColor = UIColor.blue
+        return view
     }()
     
     
@@ -51,7 +51,7 @@ class CollectionsViewController: UIViewController {
     
     private func loadAllViews() {
         setScrollView()
-//        setStackViewConstraints(stackView: collectionViewStack)
+        //        setStackViewConstraints(stackView: collectionViewStack)
     }
     
     //MARK: Add view to the StackView of Learning Phase Cards
@@ -66,7 +66,7 @@ class CollectionsViewController: UIViewController {
             
         }
         
-//        collectionViewStack.addArrangedSubview(subView1)
+        //        collectionViewStack.addArrangedSubview(subView1)
     }
     
     private func setScrollView() {

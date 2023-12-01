@@ -13,8 +13,8 @@ class CounterCertainTypesOfCardView: UIView {
     var countCards: Int?
     let widthView = (UIScreen.main.bounds.width - 80) / 3
     
-    //we use lazy properties for each view
     
+    //MARK: Lazy vars
     lazy var headerTitle: UILabel = {
         let headerTitle = UILabel(frame: CGRect(x: 0, y: 55, width: widthView, height: 20))
         headerTitle.font = UIFont.systemFont(ofSize: 14, weight: .medium)
@@ -41,6 +41,8 @@ class CounterCertainTypesOfCardView: UIView {
         return headerView
     }()
     
+    
+    
     init(frame:CGRect,typeCard: LearningPhase, countCards: Int) {
         self.typeCard = typeCard
         self.countCards = countCards
@@ -53,7 +55,7 @@ class CounterCertainTypesOfCardView: UIView {
         setupView()
     }
     
-    
+    //MARK: Setup main view
     func setupView() {
         let imageQuestionMark = UIImage(systemName: "questionmark.circle")
         

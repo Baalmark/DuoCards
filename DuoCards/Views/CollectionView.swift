@@ -8,7 +8,7 @@
 import UIKit
 
 class CollectionView: UIView {
-
+    
     var collection: CardCollection?
     
     let imageCount = UIImage(systemName: "square.filled.on.square")
@@ -39,8 +39,8 @@ class CollectionView: UIView {
         if let img = collection?.image {
             imageView.image = img
         }
-//        imageView.layer.borderColor = UIColor.red.cgColor
-//        imageView.layer.borderWidth = 2
+        //        imageView.layer.borderColor = UIColor.red.cgColor
+        //        imageView.layer.borderWidth = 2
         return imageView
     }()
     

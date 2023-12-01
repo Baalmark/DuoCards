@@ -111,7 +111,7 @@ extension UILabel {
             
             let fullAttributedString = NSMutableAttributedString(string:"\(stringToDisplay) ")
             fullAttributedString.addImageAttachment(image: img, font: .systemFont(ofSize: 30), textColor: color)
-//            fullAttributedString.append(attributedStringWithImage)
+            //            fullAttributedString.append(attributedStringWithImage)
             
             self.attributedText = fullAttributedString
             
@@ -162,9 +162,9 @@ extension UIView {
                     color: UIColor,
                     inset: CGFloat = 0.0,
                     thickness: CGFloat = 1.0) -> [UIView] {
-
+        
         var borders = [UIView]()
-
+        
         @discardableResult
         func addBorder(formats: String...) -> UIView {
             let border = UIView(frame: .zero)
@@ -179,24 +179,24 @@ extension UIView {
             borders.append(border)
             return border
         }
-
-
+        
+        
         if edges.contains(.top) || edges.contains(.all) {
             addBorder(formats: "V:|-0-[border(==thickness)]", "H:|-inset-[border]-inset-|")
         }
-
+        
         if edges.contains(.bottom) || edges.contains(.all) {
             addBorder(formats: "V:[border(==thickness)]-0-|", "H:|-inset-[border]-inset-|")
         }
-
+        
         if edges.contains(.left) || edges.contains(.all) {
             addBorder(formats: "V:|-inset-[border]-inset-|", "H:|-0-[border(==thickness)]")
         }
-
+        
         if edges.contains(.right) || edges.contains(.all) {
             addBorder(formats: "V:|-inset-[border]-inset-|", "H:[border(==thickness)]-0-|")
         }
-
+        
         return borders
     }
     
@@ -231,7 +231,7 @@ extension DuoCardsModel {
         CardCollection(cards: loadedCards, title: "Test title4", description: "Testing4", level: .beginner, image: UIImage(named: "TestImage") ?? UIImage(), cardStatus: .neutral),
         CardCollection(cards: loadedCards, title: "Test title5", description: "Testing5", level: .beginner, image: UIImage(named: "TestImage") ?? UIImage(), cardStatus: .neutral),
         CardCollection(cards: loadedCards, title: "Test title6", description: "Testing6", level: .beginner, image: UIImage(named: "TestImage") ?? UIImage(), cardStatus: .neutral),
-
+        
         
     ]
 }
@@ -245,7 +245,7 @@ extension NSMutableAttributedString {
             .foregroundColor: textColor,
             .font: font
         ]
-
+        
         self.append(
             NSAttributedString.init(
                 //U+200C (zero-width non-joiner) is a non-printing character. It will not paste unnecessary space.
@@ -253,7 +253,7 @@ extension NSMutableAttributedString {
                 attributes: textAttributes
             )
         )
-
+        
         let attachment = NSTextAttachment()
         attachment.image = image.withRenderingMode(.alwaysTemplate)
         //P.S. font.capHeight sets height of image equal to font size.

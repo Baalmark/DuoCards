@@ -58,12 +58,12 @@ class MainViewController: UIViewController {
         return label
     }()
     
-   
     
-    //Clickable labels
+    
+    //MARK: Clickable labels
     lazy var addmoreCardsLabel:UILabel = getLabel(title: "Add more cards from library", tapGesture: "Adding")
     lazy var TestmeFromKnownCards:UILabel = getLabel(title: "Test me from known cards", tapGesture: "Testing")
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadAllViews()
@@ -139,7 +139,7 @@ class MainViewController: UIViewController {
         label.textColor = .gray
         label.textAlignment = .center
         label.isUserInteractionEnabled = true
-    
+        
         if tapGesture != nil {
             //The line under the text
             let underlineAttriString = NSAttributedString(string: title,

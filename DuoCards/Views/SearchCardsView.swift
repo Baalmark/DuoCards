@@ -26,7 +26,7 @@ class SearchCardsView: UIView {
         let showCardsButton = UIButton()
         showCardsButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         showCardsButton.setTitle(" Cards",
-                for: .normal)
+                                 for: .normal)
         showCardsButton.semanticContentAttribute = .forceLeftToRight
         showCardsButton.tintColor = .black
         showCardsButton.setTitleColor(.black, for: .normal)
@@ -51,7 +51,7 @@ class SearchCardsView: UIView {
     private func configureSearchCardsStackView() {
         self.addSubview(searchCardsStackView)
     }
-
+    
     private func getSearchButton() -> UIButton {
         let searchButton = UIButton()
         let config = UIImage.SymbolConfiguration(pointSize: 24, weight: .medium, scale: .default)
@@ -109,7 +109,7 @@ class SearchCardsView: UIView {
         }
         
         searchCardsStackView.addArrangedSubview(searchButton)
-    
+        
         
         return searchCardsStackView
     }
