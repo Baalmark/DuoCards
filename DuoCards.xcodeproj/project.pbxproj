@@ -26,6 +26,7 @@
 		3AB60A732B10D018008A2DDB /* SearchCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A722B10D018008A2DDB /* SearchCardsView.swift */; };
 		3AB60A752B15F13A008A2DDB /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A742B15F13A008A2DDB /* CollectionView.swift */; };
 		3AB60A772B15F27B008A2DDB /* TypeOfDifficultyLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A762B15F27B008A2DDB /* TypeOfDifficultyLabelView.swift */; };
+		3AB60A792B1E204A008A2DDB /* SelectionCardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB60A782B1E204A008A2DDB /* SelectionCardCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		3AB60A722B10D018008A2DDB /* SearchCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardsView.swift; sourceTree = "<group>"; };
 		3AB60A742B15F13A008A2DDB /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		3AB60A762B15F27B008A2DDB /* TypeOfDifficultyLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfDifficultyLabelView.swift; sourceTree = "<group>"; };
+		3AB60A782B1E204A008A2DDB /* SelectionCardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCardCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,13 +160,12 @@
 		3AB60A642AFA6E7E008A2DDB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3AB60A7A2B1E204F008A2DDB /* Collection */,
 				3AB60A3A2AFA4F35008A2DDB /* LaunchScreen.storyboard */,
 				3AB60A302AFA4F34008A2DDB /* MainViewController.swift */,
 				3AB60A722B10D018008A2DDB /* SearchCardsView.swift */,
 				3AB60A702B10B9C5008A2DDB /* CardsListViewController.swift */,
 				3AB60A6E2B078703008A2DDB /* CounterCertainTypesOfCardView.swift */,
-				3AB60A682AFBA24E008A2DDB /* CollectionsViewController.swift */,
-				3AB60A742B15F13A008A2DDB /* CollectionView.swift */,
 				3AB60A762B15F27B008A2DDB /* TypeOfDifficultyLabelView.swift */,
 				3AB60A6A2AFBA263008A2DDB /* UserView.swift */,
 				3AB60A6C2AFBA355008A2DDB /* TabBarController.swift */,
@@ -195,6 +196,16 @@
 				3AB60A352AFA4F34008A2DDB /* DuoCards.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3AB60A7A2B1E204F008A2DDB /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				3AB60A682AFBA24E008A2DDB /* CollectionsViewController.swift */,
+				3AB60A742B15F13A008A2DDB /* CollectionView.swift */,
+				3AB60A782B1E204A008A2DDB /* SelectionCardCollectionViewController.swift */,
+			);
+			path = Collection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +340,7 @@
 			files = (
 				3AB60A602AFA621E008A2DDB /* Model.swift in Sources */,
 				3AB60A692AFBA24E008A2DDB /* CollectionsViewController.swift in Sources */,
+				3AB60A792B1E204A008A2DDB /* SelectionCardCollectionViewController.swift in Sources */,
 				3AB60A312AFA4F34008A2DDB /* MainViewController.swift in Sources */,
 				3AB60A6D2AFBA355008A2DDB /* TabBarController.swift in Sources */,
 				3AB60A6B2AFBA263008A2DDB /* UserView.swift in Sources */,
