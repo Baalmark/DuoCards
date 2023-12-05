@@ -25,17 +25,22 @@ class CollectionView: UIView {
     let frameImage:CGRect = CGRect(x:0,y:0,width: 200, height: 200)
     //MARK: Lazy vars
     lazy var difficultyLabelView: UIView = {
+        
         if let difficulty = collection?.level {
             let diffLabelView = TypeOfDifficultyLabelView(frame: CGRect(x: 0, y: 0, width: 50, height: 10), difficulty: difficulty)
+            
             return diffLabelView
         } else {
             let diffLabelView = UIView()
             return diffLabelView
         }
+        
     }()
     
     lazy var imageView:UIImageView = {
+        
         let imageView = UIImageView(frame: frameImage)
+        imageView.isUserInteractionEnabled = true
         if let img = collection?.image {
             imageView.image = img
         }
@@ -87,10 +92,17 @@ class CollectionView: UIView {
         mainView.backgroundColor = .white
         mainView.layer.borderWidth = 0.5
         mainView.layer.borderColor = UIColor.gray.cgColor
+        mainView.isUserInteractionEnabled = true
         mainView.layer.cornerRadius = 12
         mainView.addSubview(imageView)
         mainView.addSubview(headerView)
         mainView.addSubview(difficultyLabelView)
+        
+        //MARK: Custom tap gesture for Collection View
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapCollectionView(_:)))
+        //Pass collection into tap gesture
+        
+        mainView.addGestureRecognizer(tap)
         return mainView
     }()
     
@@ -126,4 +138,13 @@ class CollectionView: UIView {
         countTitle.center.x = headerView.center.x
         countTitle.center.x = headerView.center.x
     }
+    
+    @objc func didTapCollectionView(_ sender:UITapGestureRecognizer) {
+        print("Tapped")
+        let selectionCardsViewController = SelectionCardCollectionViewController()
+        
+        CollectionsViewController().navigationController?.pushViewController(selectionCardsViewController, animated: true)
+    }
+    
+    
 }

@@ -15,11 +15,13 @@ class CollectionsViewController: UIViewController {
     
     
     private let collectionViewStack:UIStackView = {
+        
         let stack = UIStackView()
         stack.axis            = .vertical
         stack.distribution    = .fill
         stack.alignment       = .fill
         stack.spacing = 20
+        stack.isUserInteractionEnabled = true
         stack.translatesAutoresizingMaskIntoConstraints = false
         
         
@@ -29,7 +31,7 @@ class CollectionsViewController: UIViewController {
     
     private let scrollView: UIScrollView = {
         let view = UIScrollView()
-        
+        view.isUserInteractionEnabled = true
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -52,23 +54,22 @@ class CollectionsViewController: UIViewController {
             let frame = CGRect(x: 0, y: 0, width: widthCollectionView, height: heightCollectionView)
             let collectionView = CollectionView(frame: frame, collection: coll)
             collectionView.heightAnchor.constraint(equalToConstant: 300).isActive = true
-            collectionViewStack.addArrangedSubview(collectionView)
             
-            //MARK: Custom tap gesture for Collection View
-            let tap = SelectionCardTapGesture(target: self, action: #selector(didTapCollectionView(_:)))
-            collectionView.addGestureRecognizer(tap)
+            
+            collectionViewStack.addArrangedSubview(collectionView)
         }
         
     }
     
-    @objc private func didTapCollectionView(_ sender: SelectionCardTapGesture? = nil) {
-        
+    private func didTapCollectionView(myGesture: UITapGestureRecognizer? = nil) {
+        print("Tapped")
         let selectionCardsViewController = SelectionCardCollectionViewController()
         
+        navigationController?.pushViewController(selectionCardsViewController, animated: true)
     }
     
     private func setScrollView() {
-        let margins = view.layoutMarginsGuide
+        let margins = view.safeAreaLayoutGuide
         view.addSubview(scrollView)
         scrollView.addSubview(collectionViewStack)
         
@@ -77,6 +78,7 @@ class CollectionsViewController: UIViewController {
         scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         scrollView.topAnchor.constraint(equalTo: margins.topAnchor,constant: 20).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: margins.bottomAnchor).isActive = true
+        
         
         
         collectionViewStack.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor,constant: 20).isActive = true
